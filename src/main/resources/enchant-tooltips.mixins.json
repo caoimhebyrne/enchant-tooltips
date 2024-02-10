@@ -1,0 +1,13 @@
+{
+    "required": true,
+    "package": "dev.caoimhe.enchanttooltips.mixin",
+    "compatibilityLevel": "JAVA_17",
+    "mixins": [
+        "EnchantedBookItemMixin",
+        "EnchantmentMixin",
+        "ItemStackMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+	}
+}

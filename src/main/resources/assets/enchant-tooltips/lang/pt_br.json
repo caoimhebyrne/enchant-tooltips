@@ -1,0 +1,22 @@
+{
+    "enchant-tooltips.enchantment.maximum_abbreviation": "máx",
+    "modmenu.descriptionTranslation.enchant-tooltips": "Adiciona mais customização às descrições de encantamentos, como mostrar o nível máximo e mais.",
+
+    "text.autoconfig.enchant-tooltips.title": "Enchant Tooltips",
+
+    "text.autoconfig.enchant-tooltips.option.showMaxOnEnchantedBooksOnly": "Mostrar apenas em livros",
+    "text.autoconfig.enchant-tooltips.option.showMaxOnEnchantedBooksOnly.@Tooltip[0]": "Quando habilitado, o nível máximo de encantamento",
+    "text.autoconfig.enchant-tooltips.option.showMaxOnEnchantedBooksOnly.@Tooltip[1]": "ficará oculto de todos os outros itens encantados.",
+    "text.autoconfig.enchant-tooltips.option.showMaxOnEnchantedBooksOnly.@PrefixText": "Descrição de Nível Máximo",
+
+    "text.autoconfig.enchant-tooltips.option.hideMaxOnMaximumLevel": "Ocultar em encantamentos com o nível máximo",
+    "text.autoconfig.enchant-tooltips.option.hideMaxOnMaximumLevel.@Tooltip[0]": "Quando habilitado, o nível máximo de encantamento",
+    "text.autoconfig.enchant-tooltips.option.hideMaxOnMaximumLevel.@Tooltip[1]": "ficará oculto se o encantamento estiver no nível máximo.",
+
+    "text.autoconfig.enchant-tooltips.option.hideOnItemsWithMultipleEnchantments": "Ocultar em itens com múltiplos encantamentos",
+
+    "text.autoconfig.enchant-tooltips.option.useRomanNumerals": "Usar números romanos",
+    "text.autoconfig.enchant-tooltips.option.useRomanNumerals.@Tooltip[0]": "Quando desabilitado, números inteiros serão utilizados",
+    "text.autoconfig.enchant-tooltips.option.useRomanNumerals.@Tooltip[1]": "nas descrições em vez de números romanos",
+    "text.autoconfig.enchant-tooltips.option.useRomanNumerals.@Tooltip[2]": "Exemplo: Afiação V (habilitado) -> Afiação 5 (desabilitado)"
+}

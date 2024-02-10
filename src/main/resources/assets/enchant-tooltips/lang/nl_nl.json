@@ -1,0 +1,22 @@
+{
+    "enchant-tooltips.enchantment.maximum_abbreviation": "max",
+    "modmenu.descriptionTranslation.enchant-tooltips": "Voegt meer personalizatie toe aan betoveringtooltips, zoals het laten zien van het maximumniveau en meer.",
+
+    "text.autoconfig.enchant-tooltips.title": "Enchant Tooltips",
+
+    "text.autoconfig.enchant-tooltips.option.showMaxOnEnchantedBooksOnly": "Laat alleen op boeken zien",
+    "text.autoconfig.enchant-tooltips.option.showMaxOnEnchantedBooksOnly.@Tooltip[0]": "Als dit ingeschakeld is zal het maximale betoveringsniveau",
+    "text.autoconfig.enchant-tooltips.option.showMaxOnEnchantedBooksOnly.@Tooltip[1]": "verborgen zijn van alle andere betoverde voorwerpen.",
+    "text.autoconfig.enchant-tooltips.option.showMaxOnEnchantedBooksOnly.@PrefixText": "Maximumniveautooltip",
+
+    "text.autoconfig.enchant-tooltips.option.hideMaxOnMaximumLevel": "Verberg op betoveringen met het maximale niveau",
+    "text.autoconfig.enchant-tooltips.option.hideMaxOnMaximumLevel.@Tooltip[0]": "Als dit ingeschakeld is zal het maximale betoveringsniveau",
+    "text.autoconfig.enchant-tooltips.option.hideMaxOnMaximumLevel.@Tooltip[1]": "niet worden laten zien als de betovering al het maximumniveau heeft.",
+
+    "text.autoconfig.enchant-tooltips.option.hideOnItemsWithMultipleEnchantments": "Verberg op voorwerpen met meerdere betoveringen",
+
+    "text.autoconfig.enchant-tooltips.option.useRomanNumerals": "Gebruik Romeinse cijfers",
+    "text.autoconfig.enchant-tooltips.option.useRomanNumerals.@Tooltip[0]": "Als dit uitgeschakeld is zullen normale cijfers worden",
+    "text.autoconfig.enchant-tooltips.option.useRomanNumerals.@Tooltip[1]": "gebruikt op tooltips in plaats van Romeinse cijfers.",
+    "text.autoconfig.enchant-tooltips.option.useRomanNumerals.@Tooltip[2]": "Voorbeeld: Scherpte V (ingeschakeld) -> Scherpte 5 (uitgeschakeld)"
+}

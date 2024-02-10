@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "enchant-tooltips",
+	"version": "${version}",
+	"name": "Enchant Tooltips",
+	"description": "Adds more customization to enchantment tooltips, like showing the max level, and more.",
+	"authors": [
+		"Caoimhe Byrne"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/enchant-tooltips",
+		"sources": "https://github.com/caoimhebyrne/enchant-tooltips",
+		"issues": "https://github.com/caoimhebyrne/enchant-tooltips/issues/"
+	},
+	"license": "MIT",
+	"icon": "assets/enchant-tooltips/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"dev.caoimhe.enchanttooltips.EnchantTooltips"
+		],
+		"modmenu": [
+			"dev.caoimhe.enchanttooltips.modmenu.ModMenuIntegration"
+		]
+	},
+	"mixins": [
+		"enchant-tooltips.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"cloth-config": "~13.0.121"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.discord": "https://discord.gg/m73BKShdJR"
+			}
+		}
+	}
+}
