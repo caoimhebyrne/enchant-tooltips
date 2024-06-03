@@ -5,7 +5,8 @@
     "mixins": [
         "EnchantmentMixin",
         "ItemEnchantmentsComponentMixin",
-        "ItemStackMixin"
+        "ItemStackMixin",
+        "EnchantmentScreenMixin"
     ],
     "injectors": {
         "defaultRequire": 1
