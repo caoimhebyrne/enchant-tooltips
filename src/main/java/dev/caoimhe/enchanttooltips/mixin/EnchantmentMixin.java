@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 
 @Mixin(Enchantment.class)
-public class EnchantmentMixin {
+public abstract class EnchantmentMixin {
     @WrapOperation(
         method = "getName",
         at = @At(

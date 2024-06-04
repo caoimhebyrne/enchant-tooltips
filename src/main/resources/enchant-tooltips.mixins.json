@@ -3,9 +3,9 @@
     "package": "dev.caoimhe.enchanttooltips.mixin",
     "compatibilityLevel": "JAVA_17",
     "mixins": [
-        "EnchantedBookItemMixin",
         "EnchantmentMixin",
-        "ItemStackMixin"
+        "ItemStackMixin",
+        "ItemEnchantmentsComponentMixin"
     ],
     "injectors": {
         "defaultRequire": 1
