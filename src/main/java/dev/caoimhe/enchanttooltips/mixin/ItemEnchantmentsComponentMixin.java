@@ -4,6 +4,7 @@ import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import dev.caoimhe.enchanttooltips.EnchantTooltips;
 import dev.caoimhe.enchanttooltips.config.EnchantTooltipsConfig;
+import dev.caoimhe.enchanttooltips.util.TextUtil;
 import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
 import net.minecraft.component.type.ItemEnchantmentsComponent;
 import net.minecraft.enchantment.Enchantment;
@@ -54,18 +55,6 @@ public class ItemEnchantmentsComponentMixin {
             }
         }
 
-        return originalText
-            .copy()
-            .append(ScreenTexts.SPACE)
-            .append("(")
-            .append(Text.translatable("enchant-tooltips.enchantment.maximum_abbreviation"))
-            .append(":")
-            .append(ScreenTexts.SPACE)
-            .append(
-                EnchantTooltipsConfig.getInstance().useRomanNumerals
-                    ? Text.translatable("enchantment.level." + enchantment.getMaxLevel())
-                    : Text.literal(String.valueOf(enchantment.getMaxLevel()))
-            )
-            .append(")");
+        return TextUtil.appendMaximumLevel(originalText, enchantment);
     }
 }
