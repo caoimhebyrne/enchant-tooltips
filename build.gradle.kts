@@ -3,7 +3,7 @@ object Constants {
     const val YARN_VERSION = "1.21+build.1"
     const val LOADER_VERSION = "0.15.11"
 
-    const val CLOTH_CONFIG_VERSION = "14.0.123"
+    const val CLOTH_CONFIG_VERSION = "15.0.127"
     const val MOD_MENU_VERSION = "11.0.0-beta.1"
     const val FABRIC_API_VERSION = "0.100.1+1.21"
 }
