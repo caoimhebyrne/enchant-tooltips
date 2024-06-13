@@ -1,20 +1,15 @@
 {
     "enchant-tooltips.enchantment.maximum_abbreviation": "max",
     "modmenu.descriptionTranslation.enchant-tooltips": "Adds more customization to enchantment tooltips, like showing the max level, and more.",
-
     "text.autoconfig.enchant-tooltips.title": "Enchant Tooltips",
-
     "text.autoconfig.enchant-tooltips.option.showMaxOnEnchantedBooksOnly": "Only show on books",
     "text.autoconfig.enchant-tooltips.option.showMaxOnEnchantedBooksOnly.@Tooltip[0]": "When enabled, the maximum enchantment",
     "text.autoconfig.enchant-tooltips.option.showMaxOnEnchantedBooksOnly.@Tooltip[1]": "level will only be shown on enchanted books.",
     "text.autoconfig.enchant-tooltips.option.showMaxOnEnchantedBooksOnly.@PrefixText": "Maximum Level Tooltip",
-
     "text.autoconfig.enchant-tooltips.option.hideMaxOnMaximumLevel": "Hide on maximum level enchantments",
     "text.autoconfig.enchant-tooltips.option.hideMaxOnMaximumLevel.@Tooltip[0]": "When enabled, the maximum enchantment level will be hidden",
     "text.autoconfig.enchant-tooltips.option.hideMaxOnMaximumLevel.@Tooltip[1]": "if the enchantment is the maximum level.",
-
     "text.autoconfig.enchant-tooltips.option.hideOnItemsWithMultipleEnchantments": "Hide on items with multiple enchantments",
-
     "text.autoconfig.enchant-tooltips.option.useRomanNumerals": "Use roman numerals",
     "text.autoconfig.enchant-tooltips.option.useRomanNumerals.@Tooltip[0]": "When disabled, literal numeric values will be used on",
     "text.autoconfig.enchant-tooltips.option.useRomanNumerals.@Tooltip[1]": "tooltips instead of roman numerals.",

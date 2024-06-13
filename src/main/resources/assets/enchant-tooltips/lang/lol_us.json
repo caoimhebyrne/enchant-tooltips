@@ -1,20 +1,15 @@
 {
     "enchant-tooltips.enchantment.maximum_abbreviation": "maks",
     "modmenu.descriptionTranslation.enchant-tooltips": "Adds moar customizashun to magic shineh tooltips, liek showin' da maks level, and moar.",
-
     "text.autoconfig.enchant-tooltips.title": "Enshant Tooltipz",
-
     "text.autoconfig.enchant-tooltips.option.showMaxOnEnchantedBooksOnly": "Onlee sho on shineh books",
     "text.autoconfig.enchant-tooltips.option.showMaxOnEnchantedBooksOnly.@Tooltip[0]": "Wen enaybled, the maksimum enchanment",
     "text.autoconfig.enchant-tooltips.option.showMaxOnEnchantedBooksOnly.@Tooltip[1]": "levul wil onlee be shoed on shineh magic books.",
     "text.autoconfig.enchant-tooltips.option.showMaxOnEnchantedBooksOnly.@PrefixText": "Maksimum Levul Tewtip",
-
     "text.autoconfig.enchant-tooltips.option.hideMaxOnMaximumLevel": "Hyde on maksimum levul shineh magic",
     "text.autoconfig.enchant-tooltips.option.hideMaxOnMaximumLevel.@Tooltip[0]": "Wen enaybled, the maksimum shineh magic levul wil be hydden",
     "text.autoconfig.enchant-tooltips.option.hideMaxOnMaximumLevel.@Tooltip[1]": "if the shinehness is the maksimum levul.",
-
     "text.autoconfig.enchant-tooltips.option.hideOnItemsWithMultipleEnchantments": "Hyde on items wif multipl magic thingz",
-
     "text.autoconfig.enchant-tooltips.option.useRomanNumerals": "Yews roman numeruls",
     "text.autoconfig.enchant-tooltips.option.useRomanNumerals.@Tooltip[0]": "Wen disaybled, litral numurik valyus wil be yewsd on",
     "text.autoconfig.enchant-tooltips.option.useRomanNumerals.@Tooltip[1]": "tewtips insted of roman numeruls.",
