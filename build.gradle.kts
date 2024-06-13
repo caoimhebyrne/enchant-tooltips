@@ -57,7 +57,13 @@ tasks {
         inputs.property("version", project.version)
 
         filesMatching("fabric.mod.json") {
-            expand(mapOf("version" to project.version))
+            expand(mapOf(
+                "version" to project.version,
+                "minecraft_version" to Constants.MINECRAFT_VERSION,
+                "mod_menu_version" to Constants.MOD_MENU_VERSION,
+                "cloth_config_version" to Constants.CLOTH_CONFIG_VERSION,
+                "loader_version" to Constants.LOADER_VERSION,
+            ))
         }
     }
 }
