@@ -18,7 +18,7 @@ public class EnchantmentMixin {
             target = "Lnet/minecraft/text/Text;translatable(Ljava/lang/String;)Lnet/minecraft/text/MutableText;"
         )
     )
-    private MutableText enchantTooltips$dontUseRomanNumerals(String key, Operation<MutableText> original) {
+    private static MutableText enchantTooltips$dontUseRomanNumerals(String key, Operation<MutableText> original) {
         if (!EnchantTooltipsConfig.getInstance().useRomanNumerals && key.startsWith("enchantment.level.")) {
             String level = key.replace("enchantment.level.", "");
             return Text.literal(level);
