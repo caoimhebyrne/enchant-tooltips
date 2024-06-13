@@ -5,23 +5,30 @@ jobs:
   build:
     strategy:
       matrix:
-        java: [ 17 ]
-        os: [ ubuntu-22.04 ]
+        java: [ 21 ]
+        os: [ ubuntu-latest ]
+
     runs-on: ${{ matrix.os }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Validate Gradle Wrapper
         uses: gradle/wrapper-validation-action@v1
+
       - name: Install JDK ${{ matrix.java }}
         uses: actions/setup-java@v4
         with:
           java-version: ${{ matrix.java }}
           distribution: 'microsoft'
+
       - name: Mark Gradle Wrapper as executable
         run: chmod +x ./gradlew
+
       - name: Build
         run: ./gradlew build
+
       - name: Upload build artifacts
         uses: actions/upload-artifact@v3
         with:
