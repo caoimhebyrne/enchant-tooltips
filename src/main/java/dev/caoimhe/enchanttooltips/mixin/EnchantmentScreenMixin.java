@@ -2,28 +2,19 @@ package dev.caoimhe.enchanttooltips.mixin;
 
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
-import dev.caoimhe.enchanttooltips.EnchantTooltips;
 import dev.caoimhe.enchanttooltips.config.EnchantTooltipsConfig;
 import dev.caoimhe.enchanttooltips.util.TextUtil;
-import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
-import net.minecraft.component.type.ItemEnchantmentsComponent;
+import net.minecraft.client.gui.screen.ingame.EnchantmentScreen;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.registry.entry.RegistryEntry;
-import net.minecraft.screen.ScreenTexts;
 import net.minecraft.text.Text;
-import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 
-@Mixin(ItemEnchantmentsComponent.class)
-public class ItemEnchantmentsComponentMixin {
-    @Shadow
-    @Final
-    Object2IntOpenHashMap<RegistryEntry<Enchantment>> enchantments;
-
+@Mixin(EnchantmentScreen.class)
+public class EnchantmentScreenMixin {
     @WrapOperation(
-        method = "appendTooltip",
+        method = "render",
         at = @At(
             value = "INVOKE",
             target = "Lnet/minecraft/enchantment/Enchantment;getName(Lnet/minecraft/registry/entry/RegistryEntry;I)Lnet/minecraft/text/Text;"
@@ -36,23 +27,15 @@ public class ItemEnchantmentsComponentMixin {
     ) {
         Enchantment enchantment = enchantmentRegistryEntry.value();
 
-        boolean isNotBook = !EnchantTooltips.IS_TOOLTIP_BEING_ADDED_TO_BOOK;
         boolean isSingleLevelEnchantment = enchantment.getMaxLevel() == 1;
-        boolean stackHasMaximumEnchantmentLevel = level == enchantment.getMaxLevel();
+        boolean isMaximumLevel = level == enchantment.getMaxLevel();
 
         Text originalText = original.call(enchantmentRegistryEntry, level);
 
         if (isSingleLevelEnchantment
-            || (EnchantTooltipsConfig.getInstance().showMaxOnEnchantedBooksOnly && isNotBook)
-            || (EnchantTooltipsConfig.getInstance().hideMaxOnMaximumLevel && stackHasMaximumEnchantmentLevel)
-        ) {
+            || !EnchantTooltipsConfig.getInstance().showMaxInEnchantingTable
+            || (EnchantTooltipsConfig.getInstance().hideMaxOnMaximumLevel && isMaximumLevel)) {
             return originalText;
-        }
-
-        if (EnchantTooltipsConfig.getInstance().hideOnItemsWithMultipleEnchantments) {
-            if (this.enchantments.size() > 1) {
-                return originalText;
-            }
         }
 
         return TextUtil.appendMaximumLevel(originalText, enchantment);
