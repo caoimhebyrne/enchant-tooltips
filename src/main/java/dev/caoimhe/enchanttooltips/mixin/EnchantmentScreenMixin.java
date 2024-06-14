@@ -32,7 +32,9 @@ public class EnchantmentScreenMixin {
 
         Text originalText = original.call(enchantmentRegistryEntry, level);
 
-        if (isSingleLevelEnchantment || (EnchantTooltipsConfig.getInstance().hideMaxOnMaximumLevel && isMaximumLevel)) {
+        if (isSingleLevelEnchantment
+            || !EnchantTooltipsConfig.getInstance().showMaxInEnchantingTable
+            || (EnchantTooltipsConfig.getInstance().hideMaxOnMaximumLevel && isMaximumLevel)) {
             return originalText;
         }
 

@@ -22,6 +22,12 @@ public class EnchantTooltipsConfig implements ConfigData {
     public boolean showMaxOnEnchantedBooksOnly = true;
 
     /**
+     * If the maximum level should be shown in the enchanting table slots
+     */
+    @ConfigEntry.Gui.Tooltip(count = 2)
+    public boolean showMaxInEnchantingTable = true;
+
+    /**
      * If the maximum level should be hidden when the item has an enchantment of the maximum level
      */
     @ConfigEntry.Gui.Tooltip(count = 2)
