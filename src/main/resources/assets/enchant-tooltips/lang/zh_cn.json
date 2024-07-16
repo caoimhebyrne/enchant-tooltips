@@ -1,0 +1,20 @@
+{
+    "enchant-tooltips.enchantment.maximum_abbreviation": "最大值：",
+    "modmenu.descriptionTranslation.enchant-tooltips": "为魔咒添加更多个性化提示信息，比如此魔咒的等级上限等",
+    "text.autoconfig.enchant-tooltips.title": "Enchant Tooltips",
+    "text.autoconfig.enchant-tooltips.option.showMaxOnEnchantedBooksOnly": "只展示附魔书",
+    "text.autoconfig.enchant-tooltips.option.showMaxOnEnchantedBooksOnly.@Tooltip[0]": "当启用时，魔咒等级上限",
+    "text.autoconfig.enchant-tooltips.option.showMaxOnEnchantedBooksOnly.@Tooltip[1]": "只会展示在附魔书的提示信息上",
+    "text.autoconfig.enchant-tooltips.option.showMaxOnEnchantedBooksOnly.@PrefixText": "魔咒等级上限提示信息",
+    "text.autoconfig.enchant-tooltips.option.showMaxInEnchantingTable": "展示附魔台槽位",
+    "text.autoconfig.enchant-tooltips.option.showMaxInEnchantingTable.@Tooltip[0]": "当启用时，魔咒等级上限",
+    "text.autoconfig.enchant-tooltips.option.showMaxInEnchantingTable.@Tooltip[1]": "会展示在附魔台槽位的提示信息上",
+    "text.autoconfig.enchant-tooltips.option.hideMaxOnMaximumLevel": "当达到最大魔咒等级上限时隐藏",
+    "text.autoconfig.enchant-tooltips.option.hideMaxOnMaximumLevel.@Tooltip[0]": "当启用时，如果当前魔咒以达到等级上限，",
+    "text.autoconfig.enchant-tooltips.option.hideMaxOnMaximumLevel.@Tooltip[1]": "魔咒等级上限提示信息将被隐藏，",
+    "text.autoconfig.enchant-tooltips.option.hideOnItemsWithMultipleEnchantments": "当物品有多个魔咒时隐藏",
+    "text.autoconfig.enchant-tooltips.option.useRomanNumerals": "使用罗马数字",
+    "text.autoconfig.enchant-tooltips.option.useRomanNumerals.@Tooltip[0]": "当禁用时，魔咒等级将显示真实的数字值，",
+    "text.autoconfig.enchant-tooltips.option.useRomanNumerals.@Tooltip[1]": "而不是罗马数字",
+    "text.autoconfig.enchant-tooltips.option.useRomanNumerals.@Tooltip[2]": "例如：锋利 V （启用） -> 锋利 5 （禁用）"
+}
